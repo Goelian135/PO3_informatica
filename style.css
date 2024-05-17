@@ -1,17 +1,55 @@
-*  {
+* {
   margin: 0px;
 }
+
 /* maakt de margin van alles 0px */
 
-body  {
+body {
   background-color: black;
 }
 
-#wrapper  {
+#wrapper {
   width: 800px;
   margin: auto;
+  background-color: cadetblue;
 }
 
 p {
   color: white;
+}
+
+nav {
+  width: 800px;
+  height: 50px;
+  background-color: #be8b1e;
+  background-image: radial-gradient(#966e17, #966e17, #FDB825);
+}
+
+.button {
+  width: 120px;
+  margin: 5px 5px;
+  padding: 5px 20px;
+  background-color: #9D511A;
+  text-align: center;
+  color: #9c9c9c;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  border: #9D511A;
+  transition-duration: 0.2s;
+  box-shadow: 0 9px #545454;
+}
+
+.button:hover {
+  background-color: black;
+  color: #990000;
+}
+
+.button:active  {
+  background-color: black;
+  box-shadow: 0 5px #333333;
+  transform: translateY(4px);
+  color: #990000;
 }
