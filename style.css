@@ -204,6 +204,7 @@ nav {
 }
 
 #page1 #page1_card2 p {
+  width: 180px;
   padding: 2px 16px;
   color: white;
 }
@@ -212,5 +213,26 @@ nav {
   width: 200px;
   height: 170px;
   margin: 10px 10px 0px 10px;
+}
+
+#quiz {
+  width: 770px;
+  margin: 5px 5px;
+  padding: 10px;
+  background-color: greenyellow;
+  float: left;
+}
+
+.vraag {
+  margin-bottom: 20px;
+  float: left;
+}
+
+.vraag label {
+  font-family: serif;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  float: left;
 }
 

@@ -7,6 +7,7 @@
   <meta name="keywords" content="HTML5, webablicatie, css, javascript, Five nights at Freddy's">
   <meta name="description" content="tutorialwebsite over scratch">
   <meta charset="utf-8">
+  <script defer src="script.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <!-- Linkt onze css document met het html bestand-->
 </head>
@@ -15,6 +16,12 @@
 <div id="wrapper">
   <!-- Met de wrapper kun je handig een breedte van je website bepalen 
     en de wrapper houd vervolgens alles netjes bij elkaar -->
+
+
+  <div id="score">
+    <p>Goed/totaal: <span id="goedePogingen">0</span>/<span id="totaalPogingen">0</span></p>
+    <p>Percentage goed: <span id="percentageGoed">0</span>%</p>
+  </div>
 
   <nav>
 
@@ -138,17 +145,24 @@
       </div>    
     </div>
 
-    <div id="quizRadio">
-      <input type="radio" id="knop1" name="quiz1" value="knop1">
-      <label for="knop1">Knoppie 1</label><br>
-      <input type="radio" id="knop2" name="quiz1" value="knop2">
-      <label for="knop2">Knoppie 2</label><br>
-      <input type="radio" id="knop3" name="quiz1" value="knop3">
-      <label for="knop3">Knoppie 3</label><br>
+    <div id="quiz"></div>
+    <form id="quizForm">
+      <div id="quizRadio" class="vraag">
+        <input type="radio" id="knop1" name="quiz1" value="knop1">
+        <label for="knop1">Knoppie 1</label><br>
+        <input type="radio" id="knop2" name="quiz1" value="knop2">
+        <label for="knop2">Knoppie 2</label><br>
+        <input type="radio" id="knop3" name="quiz1" value="knop3">
+        <label for="knop3">Knoppie 3</label><br>
+      </div>
+    </form>
+
+    <button id="submitButton" onclick="controleerAntwoorden()">Nakijken</button>
+    <script src="radiobuttons.js"></script>
+
     </div>
 
-    <button id="submitButton">Nakijken</button>
-    <script src="radiobuttons.js"></script>
+    
 
 
 
