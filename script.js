@@ -4,16 +4,15 @@ window.onload = function() {
 /* Deze functie zorgt ervoor dat de togglePage functie meteen afgaat bij het laden van de pagina
    Met het id 'home' zodat, zodra je de website laad, alleen home zichtbaar is */
 
-function togglePage(pageId)  {
+function togglePage(pageId) {
   var pages = document.querySelectorAll('.page');
 
   console.log("Toggling page:", pageId);
 
-  pages.forEach(function(page)  {
-    if (page.id === pageId)  {
+  pages.forEach(function(page) {
+    if (page.id === pageId) {
       page.style.display = 'block';
-    }
-    else  {
+    } else {
       page.style.display = 'none';
     }
   });
@@ -26,26 +25,50 @@ function togglePage(pageId)  {
   3. Voor elke id met class 'page' kijken of het id overeenkomt met pageId. 
      Zo ja, dan word de div zichtbaar. Zo niet, dan word de div onzichtbaar.*/
 
+var aantalFoutGif = 0;
+
+function playGif() {
+  var gifElement = document.getElementById('jumpscareGif');
+  var gifDuur = 3060;
+
+  gifElement.style.display = 'block';
+
+  var scr = gifElement.scr;
+  gifElement.scr = '';
+  gifElement.scr = scr;
+
+  setTimeout(function() {
+  gifElement.style.display = 'none';
+  }, gifDuur);
+}
+
 function handleSubmit() {
   var radioButtons = document.querySelectorAll('input[name="quiz1"]');
   var selectedValue = null;
-    
+
   radioButtons.forEach(function(radio) {
     if (radio.checked) {
       selectedValue = radio.value;
     }
   });
-    
+
   if (selectedValue) {
     if (selectedValue === 'knop1') {
       alert("goed");
+      document.getElementById('submitButton').style.display = 'none';
+      document.getElementById('goedAntwoord').style.color = 'green';
     } else {
-      alert("fout");
+      alert("fout, " + (aantalFoutGif + 1))
+      aantalFoutGif += 1; 
+      if (aantalFoutGif === 5) { 
+        playGif();
+        aantalFoutGif = 0
+      }
     }
   }
 }
-    
-document.getElementById('submitButton').addEventListener('click', handleSubmit);
+
+document.getElementById('submitButton').onclick = handleSubmit;
 
 document.addEventListener('DOMContentLoaded', () => {
   const goedeAntwoorden = {
@@ -56,10 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let goedePogingen = 0;
 
   function updateResultaten() {
-    const percentageGoed = totaalPogingen === 0 ? 0 : (goedePogingen / totaalPogingen * 100)
+    const percentageGoed = totaalPogingen === 0 ? 0 : (goedePogingen / totaalPogingen * 100);
+    const percentageFout = 100 - percentageGoed;
     document.getElementById('totaalPogingen').textContent = totaalPogingen;
     document.getElementById('goedePogingen').textContent = goedePogingen;
-    document.getElementById('percentageGoed').textContent = percentageGoed;
+    document.getElementById('percentageGoed').textContent = percentageGoed.toFixed(2);
+    document.getElementById('percentageFout').textContent = percentageFout.toFixed(2);
   }
 
   window.controleerAntwoorden = function() {

@@ -13,14 +13,19 @@
 </head>
 
 <body>
+
+  <img id="jumpscareGif" src="plaatjes/jumpscare.gif" alt="gif" style="display: none;">
+  <script src="script.js"></script>
+
+
 <div id="wrapper">
   <!-- Met de wrapper kun je handig een breedte van je website bepalen 
     en de wrapper houd vervolgens alles netjes bij elkaar -->
 
-
   <div id="score">
     <p>Goed/totaal: <span id="goedePogingen">0</span>/<span id="totaalPogingen">0</span></p>
     <p>Percentage goed: <span id="percentageGoed">0</span>%</p>
+    <p>Percentage fout: <span id="percentageFout">0</span>%</p>
   </div>
 
   <nav>
@@ -43,7 +48,7 @@
     <h1>Sratch tutorial</h1>
     <h2>Five nights at Freddy's edition</h2>
     
-    <img id="bigimage" src="plaatjes/filler_image.jpg" alt="" title="">
+    <img id="bigimage" src="plaatjes/hoofdafbeelding.png" alt="hoofdafbeelding" title="Scratch FnaF editie">
     
   </div>  
 
@@ -147,9 +152,9 @@
 
     <div id="quiz"></div>
     <form id="quizForm">
-      <div id="quizRadio" class="vraag">
+      <div id="quizRadio" class="vraag  ">
         <input type="radio" id="knop1" name="quiz1" value="knop1">
-        <label for="knop1">Knoppie 1</label><br>
+        <label id="goedAntwoord" for="knop1">Knoppie 1</label><br>
         <input type="radio" id="knop2" name="quiz1" value="knop2">
         <label for="knop2">Knoppie 2</label><br>
         <input type="radio" id="knop3" name="quiz1" value="knop3">
