@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let goedePogingen = 0;
 
   function updateResultaten() {
-    const percentageGoed = totaalPogingen === 0 ? 0 : (goedePogingen / totaalPogingen)
+    const percentageGoed = totaalPogingen === 0 ? 0 : (goedePogingen / totaalPogingen * 100)
     document.getElementById('totaalPogingen').textContent = totaalPogingen;
     document.getElementById('goedePogingen').textContent = goedePogingen;
     document.getElementById('percentageGoed').textContent = percentageGoed;
