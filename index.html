@@ -17,6 +17,24 @@
   <img id="jumpscareGif" src="plaatjes/jumpscare.gif" alt="gif" style="display: none;">
   <script src="script.js"></script>
 
+<!--Ik heb de header uit de wrapper gehaald zodat je een zwarte balk erboven hebt met de img en de links-->
+<div id="Header05">
+  <div id="Logo1">
+    <img src="plaatjes/Test2.png" alt="Logo1">
+  </div>
+
+  <nav>
+
+    <script src="script.js"></script>
+    <button class="button" onclick="togglePage('home')">Home</button> 
+    <button class="button" onclick="togglePage('introductie')">Introductie</button>
+    <button class="button" onclick="togglePage('page1')">The Basics</button>
+    <button class="button" onclick="togglePage('page2')">Variabelen</button>
+    <button class="button" onclick="togglePage('page3')">Looks</button>
+    <button class="button" onclick="togglePage('overOns')">Over ons</button>
+    </nav>
+    
+</div>
 
 <div id="wrapper">
   <!-- Met de wrapper kun je handig een breedte van je website bepalen 
@@ -28,16 +46,7 @@
     <p>Percentage fout: <span id="percentageFout">0</span>%</p>
   </div>
 
-  <nav>
-
-  <script src="script.js"></script>
-  <button class="button" onclick="togglePage('home')">Home</button> 
-  <button class="button" onclick="togglePage('introductie')">Introductie</button>
-  <button class="button" onclick="togglePage('page1')">The Basics</button>
-  <button class="button" onclick="togglePage('page2')">Variabelen</button>
-  <button class="button" onclick="togglePage('page3')">Looks</button>
-  <button class="button" onclick="togglePage('overOns')">Over ons</button>
-  </nav>
+  
 
   <!-- In de navagation staan alle knoppen om de tutorial paginas, home, introductie en de over ons pagina
   onzichtbaar en zichtbaar te maken. Alle knoppen gebruiken dezelfde functie om alleen dat specifieke Id 

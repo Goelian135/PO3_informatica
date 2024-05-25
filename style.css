@@ -5,13 +5,13 @@
 /* maakt de margin van alles 0px */
 
 body {
-  background-color: black;
+  background-color: rgb(184, 184, 184);
 }
 
 #wrapper {
   width: 800px;
   margin: auto;
-  background-color: cadetblue;
+  background-color: rgb(184, 184, 184);
 }
 
 #highlight {
@@ -19,10 +19,20 @@ body {
   background-color: #a8ab0a;
 }
 
-#score {
-  width: 800px;
-  height: 80px;
-  background-image: url(plaatjes/fnaf_stripe.png);
+/* De header05 is/wordt de basis van alle tutorials en stijl n shit*/
+#Header05 {
+  height: auto;
+  border-width: 10px;
+  border-color: rgb(184, 184, 184);
+  background-color: black;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+/* ik heb logo in midden proberen te zetten maar t wordt verkracht als je een klein scherm hebt.*/
+#Logo1 {
+  margin-left: 29%;
+
 }
 
 #jumpscareGif {
@@ -36,18 +46,23 @@ body {
 }
 
 #score p {
-  padding: 3px 0px;
+  float: right;
+  padding: 3px;
   width: 180px;
   height: 20px;
   font-family: serif;
   background-color: rgba(0,0,0, 0.7);
   color: rgb(220, 220, 220);
+  border-radius: 10px;
+  margin: 5px 5px;
 }
 
 nav {
   width: 800px;
   height: 50px;
-  background-color: #22212b;
+  padding: 10px;
+  margin-left: 29%;
+  margin-right: 29%;
 }
 
 .button {
@@ -83,13 +98,19 @@ nav {
 
 #home   {
   width: 800px;
-  background-image: url(plaatjes/Concrete_wall.png);
+  height: auto;
+  background-image: url(plaatjes/test4.png);
+  font-family: serif;
+  float: left;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 #home h1  {
   font-family: serif;
   font-size: 40px;
   color: #990000;
+
 }
 
 #home h2  {
@@ -105,9 +126,12 @@ nav {
 
 #introductie {
   width: 800px;
-  background-image: url(plaatjes/Concrete_wall.png);
+  height: auto;
+  background-image: url(plaatjes/test4.png);
   font-family: serif;
   float: left;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 #introductie h1 {
@@ -150,9 +174,12 @@ nav {
 
 #page1  {
   width: 800px;
-  background-color: #9D511A;
+  height: auto;
+  background-image: url(plaatjes/test4.png);
   font-family: serif;
   float: left;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 #page1 h1 {
