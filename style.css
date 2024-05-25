@@ -14,6 +14,11 @@ body {
   background-color: cadetblue;
 }
 
+#highlight {
+  font-weight: bold;
+  background-color: #a8ab0a;
+}
+
 #score {
   width: 800px;
   height: 80px;
@@ -78,19 +83,19 @@ nav {
 
 #home   {
   width: 800px;
-  background-color: #3d3d40;
+  background-image: url(plaatjes/Concrete_wall.png);
 }
 
 #home h1  {
   font-family: serif;
   font-size: 40px;
-  color: black;
+  color: #990000;
 }
 
 #home h2  {
   font-family: serif;
   font-size: 30px;
-  color: #990000;
+  color: rgb(110, 0, 0);
 }
 
 #home #bigimage {
@@ -100,31 +105,33 @@ nav {
 
 #introductie {
   width: 800px;
-  background-color: #9D511A;
+  background-image: url(plaatjes/Concrete_wall.png);
   font-family: serif;
   float: left;
 }
 
 #introductie h1 {
   font-size: 35px;
-  color: black;
-  width: 770px;
+  color: rgb(90, 0, 0);
+  background-color: rgba(0,0,0, 0.4);
+  width: 180px;
   float: left;
-  margin: 5px 7px;
+  margin: 4px 0px;
+  padding: 5px 2px;
 }
 
-#page1 p {
+#introductie p {
   width: 780px;
-  margin: 5px 8px;
+  margin: 5px 5px;
   font-size: 15px;
-  color: black;
+  color: rgb(200, 200, 200);
   float: left;
 }
 
 #introductie #introductie_card1 {
   width: 750px;
   height: 400px;
-  background-color: #6d3812;
+  background-color: #4a260c;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 20px 25px 25px 25px;
   float: left;
