@@ -340,7 +340,7 @@ nav {
   float: left;
 }
 
-#submitButton {
+.submitButton {
   width: 80px;
   margin: 0px 715px 5px 5px;
   float: left;
