@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const percentageFout = 100 - percentageGoed;
     document.getElementById('totaalPogingen').textContent = totaalPogingen;
     document.getElementById('goedePogingen').textContent = goedePogingen;
-    document.getElementById('percentageGoed').textContent = percentageGoed.toFixed(2);
-    document.getElementById('percentageFout').textContent = percentageFout.toFixed(2);
+    document.getElementById('percentageGoed').textContent = percentageGoed.toFixed(0);
+    document.getElementById('percentageFout').textContent = percentageFout.toFixed(0);
   }
 
   window.controleerAntwoorden = function() {

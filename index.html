@@ -86,19 +86,21 @@
     - Uitleg -->
 
   <div id="page1"  class="page">
-    <h1>The basics</h1>
 
     <div id="page1_card1">
-      <img id="page1_image1" src="plaatjes/Motion.png" alt="Motion" title="Het motion kopje in Scratch">
+      <a href="plaatjes/Motion.png">
+      <img id="page1_image1" src="plaatjes/Motion.png" alt="Motion" title="Het motion kopje in Scratch"></a>
       <div id="tekst">
         <p>Het motion menu in Scratch</p>
       </div>    
     </div>
 
+    <h1>The basics</h1>
+
     <p>In 'The basics' ga je leren hoe je je eerste stapjes in het codeeren in Scratch zet. 
       Je gaat leren werken met 3 kopjes:    </p>
-
-    <ul>
+    
+      <ul>
       <li>Motion</li>
       <li>Events</li>
       <li>Control</li>
@@ -127,34 +129,87 @@
       <h3>Go to ... position</h3>
 
       <p>
-        
+        Met dit blokje kan je je sprite naar een specifieke locatie laten gaan. 
+        Deze positie kan ook worden gezet op random waardoor de sprite naar een random x en y positie zal bewegen.
+        Ook kan je dit blokje zetten op dat je sprite zal gaan naar waar je muis zich bevind.
+        Zet je zo een soort blokje in een herhaal blokje dan zal je sprite je muis blijven volgen.
+      </p>
+
+      <h3>Glid in ... sec naar...</h3>
+
+      <p>
+        Met dit blokje laat je je sprite langzaam bewegen naar een positie. 
+        Zoals je misschien al hebt gemerkt met alle vorige blokjes teleporteert je sprite naar de gegeven locatie.
+        Met het 'glide to' blokje zal je sprite er heen bewegen in plaats van teleporteren.
+        Je kan deze beweging zo snel of langzaam maken als je zelf wilt door het aantal seconden dat hij erover moet doen minder of meer te maken.
+        Ook met dit blokje kan je je sprite naar een vaste positie, een random positie of naar je muis laten gaan.
       </p>
     </article>
 
-    
-
     <h2>Events</h2>
+
+    <div id="page1_card2">
+      <a href="plaatjes/Events.png">
+      <img id="page1_image2" src="plaatjes/Events.png" alt="Event_kopje" title="Het events kopje in Scratch"></a>
+      <div id="tekst">
+        <p>Dit is het events kopje in Scratch</p>
+      </div>    
+    </div>
 
     <article>
     <p>
+      Onder het kopje events hebben we 2 belangrijke blokjes: "When vlaggetje clicked" en "When 'key' key pressed".
+    </p>
 
+    <h3>When 'vlaggetje' clicked</h3>
+    <p>
+      Dit blokje laat alle code die eronder staat beginnen wanneer je op het groene vlaggetje drukt.
+      Dit blokje word vaak gebruikt voor alle code die moet beginnen wanneer je spelletje begint.
+      Let op: je drukt in je spelletje eigenlijk alleen maar op het vlaggetje als je het spel begint,
+      dus voeg geen code toe die vereist dat je meerdere malen op het vlaggetje moet drukken. 
+    </p>
+
+    <h3>When 'key' key pressed</h3>
+    <p>
+      Dit blokje kun je aanpassen tot alle toetsen op je toetsenbord.
+      Dit blokje doet hetzelfde als het vorige blokje, maar dan wanneer de specifieke toets op je toetsenbord word ingetikt.
+      Zo kun je bijvoorbeeld met WASD je poppetje alle kanten op laten bewegen of bedenk zelf maar wat voor gekkigheid je hiermee kan uithalen.
+    </p>
+
+    <p>
+      Je hebt onder events ook nog de "broadcast" en "when I receive message" blokjes.
+      Deze zijn heel nuttig om codes elkaar te kunnen laten activeren, maar dat mag je zelf uitvinden. :)
     </p>
     </article>
 
     <h2>Control</h2>
 
+    <div id="page1_card3">
+      <a href="plaatjes/control.png">
+      <img id="page1_image3" src="plaatjes/control.png" alt="Control_kopje" title="Het control kopje in Scratch"></a>
+      <div id="tekst">
+        <p>Dit is het kopje control in Scratch.</p>
+      </div>    
+    </div>
+
     <article>
     <p>
+      Onder dit kopje vind je allemaal blokjes waarmee je je code kan laten herhalen 
+      en knopjes die op voorwaardes checken en dan hun code laten werken.
+      We gaan het hier alleen maar hebben over de herhaal blokjes, maar wil je de andere knopjes ook gebruiken, 
+      voel je dan vooral vrij om daar zelf mee te gaan experimenteren.
+    </p>
 
+    <h3>Repeat en forever</h3>
+    <p>
+      De blokjes repeat and forever doen bijna hetzelfde: het repeat blokje laat je code die binnen het blokje staat
+      zo vaak herhalen als jij zelf hebt ingevoerd. Het forever blokje laat je code voor altijd herhalen.
+      Je kan dit bijvoorbeeld gebruiken als je een voorwaarde het hele spel wilt blijven checken 
+      (hier heb je dus ook de blokjes nodig die voorwaardes checken ;)). 
     </p>
     </article>
     
-    <div id="page1_card2">
-      <img id="page1_image2" src="plaatjes/filler_image.jpg" alt="" title="">
-      <div id="tekst">
-        <p>filler_image</p>
-      </div>    
-    </div>
+    
 
     <div id="quiz"></div>
     <form id="quizForm">
@@ -173,11 +228,6 @@
 
   </div>
 
-    
-
-
-
-
   <!-- Onze eerste tutorial pagina: The basics
     Hier vind je:
     - Hoe je blokjes aan elkaar koppelt
@@ -188,7 +238,7 @@
     <div id="page2" class="page">
       <div id="page2_text1">
         <h2>Variabelen</h2>
-        <p>Hier ga e leren wat variabelen zijn en hoe je ze kan gebruiken in scratch. Variabelen zijn een soort doosjes waarin een waarde zit. Je kan zelf een waarde en een naam geven aan een variabele,
+        <p>Hier ga je leren wat variabelen zijn en hoe je ze kan gebruiken in scratch. Variabelen zijn een soort doosjes waarin een waarde zit. Je kan zelf een waarde en een naam geven aan een variabele,
           hierdoor kan je makkelijk data opslaan. Variabelen zijn heel handig als je iets bij wilt houden zoals een score.
         </p>
       </div>
@@ -257,8 +307,7 @@
 
     <!-- Onze tweede tutorial pagina: Variabelen
       Hier vind je:
-      - Hoe je je eigen variablen maakt en kunt gebruiken
-      - Hoe je de blokjes onder operator kunt gebruiken -->
+      - Hoe je je eigen variablen maakt en kunt gebruiken -->
 
     <div id="page3" class="page">
       <p>kabloinkie</p>
@@ -272,7 +321,23 @@
       - Hoe je de achtergrond kan veranderen (backdrop) -->
 
     <div id="overOns" class="page">
-      <p>Pedro</p>
+      <p>Op deze paginna ga je wat leuks leren over ons, de makers van deze prachtige website.</p>
+
+      <h1>Alejandro van Melle</h1>
+
+      <p></p>
+
+      <h1>Julian van Kuik</h1>
+
+      <p></p>
+
+      <h1>Ward Franssen</h1>
+
+      <p></p>
+
+      <div id="feedback">
+        
+      </div>
 
     </div>
   </div>
