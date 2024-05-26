@@ -35,15 +35,17 @@
     
 </div>
 
+<div id="score">
+  <p>Goed/totaal: <span id="goedePogingen">0</span>/<span id="totaalPogingen">0</span></p>
+  <p>Percentage goed: <span id="percentageGoed">0</span>%</p>
+  <p>Percentage fout: <span id="percentageFout">0</span>%</p>
+</div>
+
 <div id="wrapper">
   <!-- Met de wrapper kun je handig een breedte van je website bepalen 
     en de wrapper houd vervolgens alles netjes bij elkaar -->
 
-  <div id="score">
-    <p>Goed/totaal: <span id="goedePogingen">0</span>/<span id="totaalPogingen">0</span></p>
-    <p>Percentage goed: <span id="percentageGoed">0</span>%</p>
-    <p>Percentage fout: <span id="percentageFout">0</span>%</p>
-  </div>
+  
 
   
 
@@ -52,7 +54,7 @@
   binnen de class "page" zichtbaar te maken en de rest onzichtbaar (meer in js document)-->
   
   <div id="home"  class="page">
-    <h1>Sratch tutorial</h1>
+    <h1>Scratch tutorial</h1>
     <h2>Five nights at Freddy's edition</h2>
     
     <img id="bigimage" src="plaatjes/hoofdafbeelding.png" alt="hoofdafbeelding" title="Scratch FnaF editie">
@@ -85,11 +87,11 @@
     - Uitleg -->
 
   <div id="page1"  class="page">
-
-    <iframe width="1148" height="480" src="https://www.youtube.com/embed/wNVdtvCYHN0" title="Scratch How To Use Motion Blocks | Scratch Beginner Tutorials" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
+    <div id="flikkervideo">
+      <iframe width="700px" height="400" src="https://www.youtube.com/embed/wNVdtvCYHN0" title="Scratch How To Use Motion Blocks | Scratch Beginner Tutorials" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    /</div>
     <div id="page1_card1">
       <a href="plaatjes/Motion.png">
       <img id="page1_image1" src="plaatjes/Motion.png" alt="Motion" title="Het motion kopje in Scratch"></a>
