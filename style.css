@@ -47,10 +47,13 @@ body {
 }
 
 #score {
+  margin-top: 20px;
   width: 840px;
+  border-radius: 10px;
   height: 80px;
   background-image: url(plaatjes/fnaf_stripe.png);
   float: left;
+  margin-left: 29%;
 }
 
 #score p {
@@ -113,6 +116,9 @@ nav {
   font-family: serif;
   float: left;
   padding: 20px;
+  background-image: url(plaatjes/test4.png);
+  border-radius: 25px;
+  margin-top: 30px;
 }
 
 #home h1  {
@@ -140,6 +146,9 @@ nav {
   font-family: serif;
   float: left;
   padding: 20px;
+  background-image: url(plaatjes/test4.png);
+  border-radius: 25px;
+  margin-top: 30px;
 }
 
 #introductie h1 {
@@ -183,11 +192,14 @@ nav {
 #page1  {
   width: 800px;
   height: auto;
-  background-image: url(plaatjes/Concrete_wall.png);
   font-family: serif;
   float: left;
   border-radius: 50px;
   padding: 20px;
+  background-image: url(plaatjes/test4.png);
+  border-radius: 25px;
+  margin-top: 30px;
+
 }
 
 #page1 h1 {
@@ -242,6 +254,7 @@ nav {
   font-size: 15px;
   color: rgb(200, 200, 200);
   float: left;
+  width: auto;
 }
 
 #page1_card1 {
@@ -334,13 +347,16 @@ nav {
 }
 
 #page2 {
-  background-color: #9D511A;
-  height: auto;
   width: 800px;
-  float:left;
+  height: auto;
   font-family: serif;
+  float: left;
   border-radius: 50px;
   padding: 20px;
+  background-image: url(plaatjes/test4.png);
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-left: 29%;
 }
 
 .card {
@@ -452,7 +468,10 @@ nav {
   width: 800px;
   float:left;
   font-family: serif;
-  border-radius: 50px;
+  background-image: url(plaatjes/test4.png);
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-left: 29%;
   padding: 20px;
 }
 
@@ -544,4 +563,23 @@ nav {
 #page3_img3 {
   width: 200px;
   margin: 10px 10px 0px 10px;
+}
+
+#overOns {
+  background-color: #9D511A;
+  height: auto;
+  width: 800px;
+  float:left;
+  font-family: serif;
+  background-image: url(plaatjes/test4.png);
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-left: 29%;
+  padding: 20px;
+
+}
+
+#flikkervideo {
+  margin-left: 50px;
+  border-radius: 25px;
 }
