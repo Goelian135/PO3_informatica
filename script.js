@@ -1,11 +1,13 @@
 window.onload = function() {
   togglePage('home');
 };
+
 /* Deze functie zorgt ervoor dat de togglePage functie meteen afgaat bij het laden van de pagina
    Met het id 'home' zodat, zodra je de website laad, alleen home zichtbaar is */
 
 function togglePage(pageId) {
   var pages = document.querySelectorAll('.page');
+  //verzamelt alle id's met class page
 
   console.log("Toggling page:", pageId);
 
@@ -38,37 +40,13 @@ function playGif() {
   gifElement.scr = scr;
 
   setTimeout(function() {
-  gifElement.style.display = 'none';
+    gifElement.style.display = 'none';
   }, gifDuur);
 }
 
-function handleSubmit() {
-  var radioButtons = document.querySelectorAll('input[name="quiz1"]');
-  var selectedValue = null;
-
-  radioButtons.forEach(function(radio) {
-    if (radio.checked) {
-      selectedValue = radio.value;
-    }
-  });
-
-  if (selectedValue) {
-    if (selectedValue === 'knop1') {
-      alert("goed");
-      document.getElementById('submitButton').style.display = 'none';
-      document.getElementById('goedAntwoord').style.color = 'green';
-    } else {
-      alert("fout, " + (aantalFoutGif + 1))
-      aantalFoutGif += 1; 
-      if (aantalFoutGif === 5) { 
-        playGif();
-        aantalFoutGif = 0
-      }
-    }
-  }
-}
-
-document.getElementById('submitButton').onclick = handleSubmit;
+/* Deze functie speelt de jumpscare als je 5x een fout maakt
+   Hij doet dit door de gif te laten zien, de link te verwijderen en dan opnieuw erin te zetten zodat de gif weer
+   vanaf het begin speelt, dan de gif weer onzichtbaar maken als hij een keer is geweest.*/
 
 document.addEventListener('DOMContentLoaded', () => {
   const goedeAntwoorden = {
@@ -85,6 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('goedePogingen').textContent = goedePogingen;
     document.getElementById('percentageGoed').textContent = percentageGoed.toFixed(0);
     document.getElementById('percentageFout').textContent = percentageFout.toFixed(0);
+
+    console.log("Update Resultaten: ", {
+      totaalPogingen: totaalPogingen,
+      goedePogingen: goedePogingen,
+      percentageGoed: percentageGoed,
+      percentageFout: percentageFout
+    });
   }
 
   window.controleerAntwoorden = function() {
@@ -95,16 +80,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const quiz1Antwoord = form.elements['quiz1'].value;
     if (quiz1Antwoord === goedeAntwoorden.quiz1) {
       correctAantal++;
+      alert("goed");
+      document.getElementById('submitButton').style.display = 'none';
+      document.getElementById('goedAntwoord').style.color = 'green';
+    } else {
+      alert("fout, " + (aantalFoutGif + 1));
+      aantalFoutGif += 1;
+      if (aantalFoutGif === 5) {
+        playGif();
+        aantalFoutGif = 0;
+      }
     }
 
     goedePogingen += correctAantal;
     updateResultaten();
   };
+
+  updateResultaten();
 });
 
-
-
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('feedbackForm');
   const submitBtn = document.getElementById('feedbackKnop');
   const cancelBtn = document.getElementById('cancelBtn');
