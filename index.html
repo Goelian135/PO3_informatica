@@ -87,6 +87,10 @@
 
   <div id="page1"  class="page">
 
+    <iframe width="1148" height="480" src="https://www.youtube.com/embed/wNVdtvCYHN0" title="Scratch How To Use Motion Blocks | Scratch Beginner Tutorials" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
     <div id="page1_card1">
       <a href="plaatjes/Motion.png">
       <img id="page1_image1" src="plaatjes/Motion.png" alt="Motion" title="Het motion kopje in Scratch"></a>
@@ -238,7 +242,7 @@
     <div id="page2" class="page">
       <div id="page2_text1">
         <h1>Variabelen</h1>
-        <p>Hier ga jje leren wat variabelen zijn en hoe je ze kan gebruiken in scratch. Variabelen zijn een soort doosjes waarin een waarde zit. Je kan zelf een waarde en een naam geven aan een variabele,
+        <p>Hier ga je leren wat variabelen zijn en hoe je ze kan gebruiken in scratch. Variabelen zijn een soort doosjes waarin een waarde zit. Je kan zelf een waarde en een naam geven aan een variabele,
           hierdoor kan je makkelijk data opslaan. Variabelen zijn heel handig als je iets bij wilt houden zoals een score.
         </p>
       </div>
@@ -401,19 +405,47 @@
 
       <h1>Alejandro van Melle</h1>
 
-      <p></p>
+      <p>Immigrant</p>
 
       <h1>Julian van Kuik</h1>
 
-      <p></p>
+      <p>Julian zit in klas 4va op het minkemacollege. 
+        Hij houd van gamen en heeft iets te veel uur (en geld) in Fortnite zitten.
+      </p>
 
       <h1>Ward Franssen</h1>
 
-      <p></p>
+      <p>Ward zit in klas 4va op het minkemacollege en hij is de maker van de super populaire website
+        <a href="https://larsvlaar.nl/">larsvlaar.nl</a>.
+      </p>
 
       <div id="feedback">
-        
+
+        <form id="feedbackForm">
+          <h2>Feedback</h2>
+          <div>
+            <label for="vraag1">Wat vind je van de website?</label><br>
+            <select id="vraag1" name="vraag1" required>
+              <option value="">Selecteer een optie</option>
+              <option value="geweldig">Geweldig</option>
+              <option value="goed">Goed</option>
+              <option value="oke">Oke</option>
+              <option value="slecht">Slecht</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="vraag2">Suggesties voor verbeteringen?</label><br>
+            <textarea id="vraag2" name="vraag2" rows="4" cols="50"></textarea>
+          </div>
+
+          <button type="button" id="feedbackKnop">Submit</button>
+        </form>
+
+        <button id="cancelBtn" style="display: none;">Cancel</button>
       </div>
+      <script src="script.js"></script>
+
 
     </div>
   </div>

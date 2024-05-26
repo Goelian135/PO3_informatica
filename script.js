@@ -101,3 +101,31 @@ document.addEventListener('DOMContentLoaded', () => {
     updateResultaten();
   };
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('feedbackForm');
+  const submitBtn = document.getElementById('feedbackKnop');
+  const cancelBtn = document.getElementById('cancelBtn');
+
+  submitBtn.addEventListener('click', function() {
+    if (form.checkValidity()) {
+      form.querySelectorAll('input, select, textarea').forEach(element => {
+        element.disabled = true;
+      });
+      submitBtn.style.display = 'none';
+      cancelBtn.style.display = 'block';
+    } else {
+      alert('Vul asjeblieft alle vragen in.');
+    }
+  });
+
+  cancelBtn.addEventListener('click', function() {
+    form.querySelectorAll('input, select, textarea').forEach(element => {
+      element.disabled = false;
+    });
+    submitBtn.style.display = 'block';
+    cancelBtn.style.display = 'none';
+  });
+});
