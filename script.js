@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
       quiz2: 'antwoord2',
       quiz3: 'knop2'
     };
+
+    //een lijst van alle goede antwoorden van de quizes
   
     let totaalPogingen = 0;
     let goedePogingen = 0;
@@ -74,6 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         percentageFout: percentageFout
       });
     }
+
+    //de code die de score brekent en dan update in de html
   
     window.controleerAntwoorden = function(buttonId, quizId) {
       totaalPogingen++;
@@ -97,6 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
             aantalFoutGif = 0;
           }
         }
+
+        //code per quiz die het antwoord controleert, als het goed is de nakijkknop onzichtbaar maakt en correctaantal update
+
       } else if (quizId === 'quiz2') {
         if (antwoord === goedeAntwoorden.quiz2) {
           correctAantal++;
@@ -150,6 +157,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  //code submit knop
+
   cancelBtn.addEventListener('click', function() {
     form.querySelectorAll('input, select, textarea').forEach(element => {
       element.disabled = false;
@@ -157,4 +166,11 @@ document.addEventListener('DOMContentLoaded', function() {
     submitBtn.style.display = 'block';
     cancelBtn.style.display = 'none';
   });
+
+  //code cancel knop
 });
+
+/* De code voor het feedback formulier. Dit is hoe het werkt:
+  Op de site kun je je rating geven + suggesties doen
+  Als je op de submit knop drukt kun je deze gegevens niet meer aanpassen
+  Als je op de cancel knop drukt kan je je keuzes weer aanpassen*/
