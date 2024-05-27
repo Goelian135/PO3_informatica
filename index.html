@@ -17,257 +17,257 @@
 
   <img id="jumpscareGif" src="plaatjes/jumpscare.gif" alt="gif" style="display: none;">
 
-<!--Ik heb de header uit de wrapper gehaald zodat je een zwarte balk erboven hebt met de img en de links-->
-<div id="Header05">
-  <div id="Logo1">
-    <img src="plaatjes/Test2.png" alt="Logo1">
+  <!--Ik heb de header uit de wrapper gehaald zodat je een zwarte balk erboven hebt met de img en de links-->
+  <div id="Header05">
+    <div id="Logo1">
+      <img src="plaatjes/Test2.png" alt="Logo1">
+    </div>
+
+    <nav>
+      <button class="button" onclick="togglePage('home')">Home</button> 
+      <button class="button" onclick="togglePage('introductie')">Introductie</button>
+      <button class="button" onclick="togglePage('page1')">The Basics</button>
+      <button class="button" onclick="togglePage('page2')">Variabelen</button>
+      <button class="button" onclick="togglePage('page3')">Looks</button>
+      <button class="button" onclick="togglePage('overOns')">Over ons</button>
+      </nav>
+      
   </div>
 
-  <nav>
-    <button class="button" onclick="togglePage('home')">Home</button> 
-    <button class="button" onclick="togglePage('introductie')">Introductie</button>
-    <button class="button" onclick="togglePage('page1')">The Basics</button>
-    <button class="button" onclick="togglePage('page2')">Variabelen</button>
-    <button class="button" onclick="togglePage('page3')">Looks</button>
-    <button class="button" onclick="togglePage('overOns')">Over ons</button>
-    </nav>
-    
-</div>
-
-<div id="score">
-  <p>Goed/totaal: <span id="goedePogingen">0</span>/<span id="totaalPogingen">0</span></p>
-  <p>Percentage goed: <span id="percentageGoed">0</span>%</p>
-  <p>Percentage fout: <span id="percentageFout">0</span>%</p>
-</div>
-
-<div id="wrapper">
-  <!-- Met de wrapper kun je handig een breedte van je website bepalen 
-    en de wrapper houd vervolgens alles netjes bij elkaar -->
-
-  
-
-  
-
-  <!-- In de navagation staan alle knoppen om de tutorial paginas, home, introductie en de over ons pagina
-  onzichtbaar en zichtbaar te maken. Alle knoppen gebruiken dezelfde functie om alleen dat specifieke Id 
-  binnen de class "page" zichtbaar te maken en de rest onzichtbaar (meer in js document)-->
-  
-  <div id="home"  class="page">
-    <h1>Scratch tutorial</h1>
-    <h2>Five nights at Freddy's edition</h2>
-    
-    <img id="bigimage" src="plaatjes/hoofdafbeelding.png" alt="hoofdafbeelding" title="Scratch FnaF editie">
-    
-  </div>  
-
-  <!-- Onze home pagina -->
-
-  <div id="introductie"  class="page">
-    <h1>Introductie</h1>
-
-    <p>Welkom student, <br>
-      Op deze website ga je wat basis kennis van Scratch opdoen zodat jij je eerste projecten in Scratch kan gaan maken.
-      De webiste is opgedeeld in 3 pagina's.<br>
-      Op de eerste ga je de eerste dingetjes van Scratch leren waarna je je <b id="highlight">'sprite'</b> kan laten bewegen, 
-      hem acties kan laten herhalen en je programma kan laten starten door op het groene vlaggetje te drukken.<br>
-      Op de tweede pagina ga je leren hoe je zelf gemaakte variablen kan gebruiken en toepassen.<br>
-      Op de derde pagina ga je leren hoe je je sprites en achtergronden mooier kan maken waardoor jouw spel nog beter word.
-    </p>
-
-    <div id="introductie_card1">
-      <img id="defaultScratch" src="plaatjes/default_scratch.png" alt="defaultScratch" title="Scratch zonder code">
-        <p>Een nieuw project in Scratch zonder code<br>
-          Binnen het rode vierkant bevinden zich je sprites</p>
-    </div>
+  <div id="score">
+    <p>Goed/totaal: <span id="goedePogingen">0</span>/<span id="totaalPogingen">0</span></p>
+    <p>Percentage goed: <span id="percentageGoed">0</span>%</p>
+    <p>Percentage fout: <span id="percentageFout">0</span>%</p>
   </div>
 
-  <!-- Onze introductie pagina
-    Hier vind je:
-    - Uitleg -->
+  <div id="wrapper">
+    <!-- Met de wrapper kun je handig een breedte van je website bepalen 
+      en de wrapper houd vervolgens alles netjes bij elkaar -->
 
-  <div id="page1"  class="page">
-    <div id="flikkervideo">
-      <iframe width="700px" height="400" src="https://www.youtube.com/embed/wNVdtvCYHN0" title="Scratch How To Use Motion Blocks | Scratch Beginner Tutorials" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe>
-    /</div>
-    <div id="page1_card1">
-      <a href="plaatjes/Motion.png">
-      <img id="page1_image1" src="plaatjes/Motion.png" alt="Motion" title="Het motion kopje in Scratch"></a>
-      <div id="tekst">
-        <p>Het motion menu in Scratch</p>
-      </div>    
-    </div>
-
-    <h1>The basics</h1>
-
-    <p>In 'The basics' ga je leren hoe je je eerste stapjes in het codeeren in Scratch zet. 
-      Je gaat leren werken met 3 kopjes:    </p>
-    
-      <ul>
-      <li>Motion</li>
-      <li>Events</li>
-      <li>Control</li>
-    </ul>
-
-    <p>Hiermee ga je leren hoe je je sprite kan laten bewegen, 
-      hoe je je programma aan kan zetten en hoe je acties kan laten herhalen.  </p>
-
-    <h2>Motion</h2>
-
-    <article>
-      <p>
-        In het kopje motion kan je alle blokjes vinden die jouw sprite kunnen laten bewegen.
-        Zo heb je bijvoorbeeld: 'move ... steps', 'go to ... position' of 'glide in ... sec naar ...'.
-      </p>
-
-      <h3>Move ... steps</h3>
-
-      <p>
-        Met het blokje move ... steps kan je je sprite met een aantal stapjes op de x-as (de horizontale as) laten bewegen.
-        Maak je er move 10 steps van en activeer je het blokje dan, dan zal je sprite 10 stapjes naar rechts zetten.
-        Als je je sprite naar links wilt laten gaan moet je het getal op de 3 puntjes negatief maken.
-        Bijvoorbeeld move -10 steps. Je sprite zal dan 10 stapjes naar links doen.
-      </p>
-
-      <h3>Go to ... position</h3>
-
-      <p>
-        Met dit blokje kan je je sprite naar een specifieke locatie laten gaan. 
-        Deze positie kan ook worden gezet op random waardoor de sprite naar een random x en y positie zal bewegen.
-        Ook kan je dit blokje zetten op dat je sprite zal gaan naar waar je muis zich bevind.
-        Zet je zo een soort blokje in een herhaal blokje dan zal je sprite je muis blijven volgen.
-      </p>
-
-      <h3>Glid in ... sec naar...</h3>
-
-      <p>
-        Met dit blokje laat je je sprite langzaam bewegen naar een positie. 
-        Zoals je misschien al hebt gemerkt met alle vorige blokjes teleporteert je sprite naar de gegeven locatie.
-        Met het 'glide to' blokje zal je sprite er heen bewegen in plaats van teleporteren.
-        Je kan deze beweging zo snel of langzaam maken als je zelf wilt door het aantal seconden dat hij erover moet doen minder of meer te maken.
-        Ook met dit blokje kan je je sprite naar een vaste positie, een random positie of naar je muis laten gaan.
-      </p>
-    </article>
-
-    <h2>Events</h2>
-
-    <div id="page1_card2">
-      <a href="plaatjes/Events.png">
-      <img id="page1_image2" src="plaatjes/Events.png" alt="Event_kopje" title="Het events kopje in Scratch"></a>
-      <div id="tekst">
-        <p>Dit is het events kopje in Scratch</p>
-      </div>    
-    </div>
-
-    <article>
-    <p>
-      Onder het kopje events hebben we 2 belangrijke blokjes: "When vlaggetje clicked" en "When 'key' key pressed".
-    </p>
-
-    <h3>When 'vlaggetje' clicked</h3>
-    <p>
-      Dit blokje laat alle code die eronder staat beginnen wanneer je op het groene vlaggetje drukt.
-      Dit blokje word vaak gebruikt voor alle code die moet beginnen wanneer je spelletje begint.
-      Let op: je drukt in je spelletje eigenlijk alleen maar op het vlaggetje als je het spel begint,
-      dus voeg geen code toe die vereist dat je meerdere malen op het vlaggetje moet drukken. 
-    </p>
-
-    <h3>When 'key' key pressed</h3>
-    <p>
-      Dit blokje kun je aanpassen tot alle toetsen op je toetsenbord.
-      Dit blokje doet hetzelfde als het vorige blokje, maar dan wanneer de specifieke toets op je toetsenbord word ingetikt.
-      Zo kun je bijvoorbeeld met WASD je poppetje alle kanten op laten bewegen of bedenk zelf maar wat voor gekkigheid je hiermee kan uithalen.
-    </p>
-
-    <p>
-      Je hebt onder events ook nog de "broadcast" en "when I receive message" blokjes.
-      Deze zijn heel nuttig om codes elkaar te kunnen laten activeren, maar dat mag je zelf uitvinden. :)
-    </p>
-    </article>
-
-    <h2>Control</h2>
-
-    <div id="page1_card3">
-      <a href="plaatjes/control.png">
-      <img id="page1_image3" src="plaatjes/control.png" alt="Control_kopje" title="Het control kopje in Scratch"></a>
-      <div id="tekst">
-        <p>Dit is het kopje control in Scratch.</p>
-      </div>    
-    </div>
-
-    <article>
-    <p>
-      Onder dit kopje vind je allemaal blokjes waarmee je je code kan laten herhalen 
-      en knopjes die op voorwaardes checken en dan hun code laten werken.
-      We gaan het hier alleen maar hebben over de herhaal blokjes, maar wil je de andere knopjes ook gebruiken, 
-      voel je dan vooral vrij om daar zelf mee te gaan experimenteren.
-    </p>
-
-    <h3>Repeat en forever</h3>
-    <p>
-      De blokjes repeat and forever doen bijna hetzelfde: het repeat blokje laat je code die binnen het blokje staat
-      zo vaak herhalen als jij zelf hebt ingevoerd. Het forever blokje laat je code voor altijd herhalen.
-      Je kan dit bijvoorbeeld gebruiken als je een voorwaarde het hele spel wilt blijven checken 
-      (hier heb je dus ook de blokjes nodig die voorwaardes checken ;)). 
-    </p>
-    </article>
-    
     
 
-    <div id="quiz">
-      <form id="quiz1" class="radioButtonQuiz">
-        <div id="quizRadio" class="vraag">
-          <label for="quiz1">Hoe beweeg je je sprite naar links met het blokje 'move ... steps'?</label>
-          <input type="radio" id="knop1" name="quiz1" value="knop1">
-          <label id="goedAntwoord" for="knop1">Met -... steps (move -10 steps)</label><br>
-          <input type="radio" id="knop2" name="quiz1" value="knop2">
-          <label for="knop2">Een 'L' toe te voegen na het cijfer (move 10 L steps)</label><br>
-          <input type="radio" id="knop3" name="quiz1" value="knop3">
-          <label for="knop3">kan niet</label><br>
-        </div>
-      </form>
+    
+
+    <!-- In de navagation staan alle knoppen om de tutorial paginas, home, introductie en de over ons pagina
+    onzichtbaar en zichtbaar te maken. Alle knoppen gebruiken dezelfde functie om alleen dat specifieke Id 
+    binnen de class "page" zichtbaar te maken en de rest onzichtbaar (meer in js document)-->
+    
+    <div id="home"  class="page">
+      <h1>Scratch tutorial</h1>
+      <h2>Five nights at Freddy's edition</h2>
+      
+      <img id="bigimage" src="plaatjes/hoofdafbeelding.png" alt="hoofdafbeelding" title="Scratch FnaF editie">
+      
+    </div>  
+
+    <!-- Onze home pagina -->
+
+    <div id="introductie"  class="page">
+      <h1>Introductie</h1>
+
+      <p>Welkom student, <br>
+        Op deze website ga je wat basis kennis van Scratch opdoen zodat jij je eerste projecten in Scratch kan gaan maken.
+        De webiste is opgedeeld in 3 pagina's.<br>
+        Op de eerste ga je de eerste dingetjes van Scratch leren waarna je je <b id="highlight">'sprite'</b> kan laten bewegen, 
+        hem acties kan laten herhalen en je programma kan laten starten door op het groene vlaggetje te drukken.<br>
+        Op de tweede pagina ga je leren hoe je zelf gemaakte variablen kan gebruiken en toepassen.<br>
+        Op de derde pagina ga je leren hoe je je sprites en achtergronden mooier kan maken waardoor jouw spel nog beter word.
+      </p>
+
+      <div id="introductie_card1">
+        <img id="defaultScratch" src="plaatjes/default_scratch.png" alt="defaultScratch" title="Scratch zonder code">
+          <p>Een nieuw project in Scratch zonder code<br>
+            Binnen het rode vierkant bevinden zich je sprites</p>
+      </div>
+    </div>
+
+    <!-- Onze introductie pagina
+      Hier vind je:
+      - Uitleg -->
+
+    <div id="page1"  class="page">
+      <div id="flikkervideo">
+        <iframe width="700px" height="400" src="https://www.youtube.com/embed/wNVdtvCYHN0" title="Scratch How To Use Motion Blocks | Scratch Beginner Tutorials" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      /</div>
+      <div id="page1_card1">
+        <a href="plaatjes/Motion.png">
+        <img id="page1_image1" src="plaatjes/Motion.png" alt="Motion" title="Het motion kopje in Scratch"></a>
+        <div id="tekst">
+          <p>Het motion menu in Scratch</p>
+        </div>    
+      </div>
+
+      <h1>The basics</h1>
+
+      <p>In 'The basics' ga je leren hoe je je eerste stapjes in het codeeren in Scratch zet. 
+        Je gaat leren werken met 3 kopjes:    </p>
+      
+        <ul>
+        <li>Motion</li>
+        <li>Events</li>
+        <li>Control</li>
+      </ul>
+
+      <p>Hiermee ga je leren hoe je je sprite kan laten bewegen, 
+        hoe je je programma aan kan zetten en hoe je acties kan laten herhalen.  </p>
+
+      <h2>Motion</h2>
+
+      <article>
+        <p>
+          In het kopje motion kan je alle blokjes vinden die jouw sprite kunnen laten bewegen.
+          Zo heb je bijvoorbeeld: 'move ... steps', 'go to ... position' of 'glide in ... sec naar ...'.
+        </p>
+
+        <h3>Move ... steps</h3>
+
+        <p>
+          Met het blokje move ... steps kan je je sprite met een aantal stapjes op de x-as (de horizontale as) laten bewegen.
+          Maak je er move 10 steps van en activeer je het blokje dan, dan zal je sprite 10 stapjes naar rechts zetten.
+          Als je je sprite naar links wilt laten gaan moet je het getal op de 3 puntjes negatief maken.
+          Bijvoorbeeld move -10 steps. Je sprite zal dan 10 stapjes naar links doen.
+        </p>
+
+        <h3>Go to ... position</h3>
+
+        <p>
+          Met dit blokje kan je je sprite naar een specifieke locatie laten gaan. 
+          Deze positie kan ook worden gezet op random waardoor de sprite naar een random x en y positie zal bewegen.
+          Ook kan je dit blokje zetten op dat je sprite zal gaan naar waar je muis zich bevind.
+          Zet je zo een soort blokje in een herhaal blokje dan zal je sprite je muis blijven volgen.
+        </p>
+
+        <h3>Glid in ... sec naar...</h3>
+
+        <p>
+          Met dit blokje laat je je sprite langzaam bewegen naar een positie. 
+          Zoals je misschien al hebt gemerkt met alle vorige blokjes teleporteert je sprite naar de gegeven locatie.
+          Met het 'glide to' blokje zal je sprite er heen bewegen in plaats van teleporteren.
+          Je kan deze beweging zo snel of langzaam maken als je zelf wilt door het aantal seconden dat hij erover moet doen minder of meer te maken.
+          Ook met dit blokje kan je je sprite naar een vaste positie, een random positie of naar je muis laten gaan.
+        </p>
+      </article>
+
+      <h2>Events</h2>
+
+      <div id="page1_card2">
+        <a href="plaatjes/Events.png">
+        <img id="page1_image2" src="plaatjes/Events.png" alt="Event_kopje" title="Het events kopje in Scratch"></a>
+        <div id="tekst">
+          <p>Dit is het events kopje in Scratch</p>
+        </div>    
+      </div>
+
+      <article>
+      <p>
+        Onder het kopje events hebben we 2 belangrijke blokjes: "When vlaggetje clicked" en "When 'key' key pressed".
+      </p>
+
+      <h3>When 'vlaggetje' clicked</h3>
+      <p>
+        Dit blokje laat alle code die eronder staat beginnen wanneer je op het groene vlaggetje drukt.
+        Dit blokje word vaak gebruikt voor alle code die moet beginnen wanneer je spelletje begint.
+        Let op: je drukt in je spelletje eigenlijk alleen maar op het vlaggetje als je het spel begint,
+        dus voeg geen code toe die vereist dat je meerdere malen op het vlaggetje moet drukken. 
+      </p>
+
+      <h3>When 'key' key pressed</h3>
+      <p>
+        Dit blokje kun je aanpassen tot alle toetsen op je toetsenbord.
+        Dit blokje doet hetzelfde als het vorige blokje, maar dan wanneer de specifieke toets op je toetsenbord word ingetikt.
+        Zo kun je bijvoorbeeld met WASD je poppetje alle kanten op laten bewegen of bedenk zelf maar wat voor gekkigheid je hiermee kan uithalen.
+      </p>
+
+      <p>
+        Je hebt onder events ook nog de "broadcast" en "when I receive message" blokjes.
+        Deze zijn heel nuttig om codes elkaar te kunnen laten activeren, maar dat mag je zelf uitvinden. :)
+      </p>
+      </article>
+
+      <h2>Control</h2>
+
+      <div id="page1_card3">
+        <a href="plaatjes/control.png">
+        <img id="page1_image3" src="plaatjes/control.png" alt="Control_kopje" title="Het control kopje in Scratch"></a>
+        <div id="tekst">
+          <p>Dit is het kopje control in Scratch.</p>
+        </div>    
+      </div>
+
+      <article>
+      <p>
+        Onder dit kopje vind je allemaal blokjes waarmee je je code kan laten herhalen 
+        en knopjes die op voorwaardes checken en dan hun code laten werken.
+        We gaan het hier alleen maar hebben over de herhaal blokjes, maar wil je de andere knopjes ook gebruiken, 
+        voel je dan vooral vrij om daar zelf mee te gaan experimenteren.
+      </p>
+
+      <h3>Repeat en forever</h3>
+      <p>
+        De blokjes repeat and forever doen bijna hetzelfde: het repeat blokje laat je code die binnen het blokje staat
+        zo vaak herhalen als jij zelf hebt ingevoerd. Het forever blokje laat je code voor altijd herhalen.
+        Je kan dit bijvoorbeeld gebruiken als je een voorwaarde het hele spel wilt blijven checken 
+        (hier heb je dus ook de blokjes nodig die voorwaardes checken ;)). 
+      </p>
+      </article>
+      
       
 
-      <button type="button" id="submitButton1" class="submitButton" onclick="controleerAntwoorden('submitButton1', 'quiz1')" style="display: block;">Nakijken</button>
+      <div id="quiz">
+        <form id="quiz1" class="radioButtonQuiz">
+          <div id="quizRadio" class="vraag">
+            <label for="quiz1">Hoe beweeg je je sprite naar links met het blokje 'move ... steps'?</label>
+            <input type="radio" id="knop1" name="quiz1" value="knop1">
+            <label id="goedAntwoord" for="knop1">Met -... steps (move -10 steps)</label><br>
+            <input type="radio" id="knop2" name="quiz1" value="knop2">
+            <label for="knop2">Een 'L' toe te voegen na het cijfer (move 10 L steps)</label><br>
+            <input type="radio" id="knop3" name="quiz1" value="knop3">
+            <label for="knop3">kan niet</label><br>
+          </div>
+        </form>
+        
 
-      <form id="quiz2" class="dropDownQuiz">
-        <div id="dropDown" class="vraag">
-          <label for="">Wat voor code moet je niet toevoegen onder het eventblokje 'when vlaggetje clicked'?</label>
-          <select name="quiz2">
-            <option id="knop1" value="">Kies een antwoord</option>
-            <option id="knop2" value="antwoord1">'glide in ... sec to ...' blokjes</option>
-            <option id="knop3" value="antwoord2">Code die je vaker moet activeren met een knop</option>
-            <option id="knop4" value="antwoord3">Code met repeat blokjes erin</option>
-          </select>
-        </div>
-      </form>
+        <button type="button" id="submitButton1" class="submitButton" onclick="controleerAntwoorden('submitButton1', 'quiz1')" style="display: block;">Nakijken</button>
 
-      <button type="button" id="submitButton2" class="submitButton" onclick="controleerAntwoorden('submitButton2', 'quiz2')" style="display: block;">Nakijken</button>
+        <form id="quiz2" class="dropDownQuiz">
+          <div id="dropDown" class="vraag">
+            <label for="">Wat voor code moet je niet toevoegen onder het eventblokje 'when vlaggetje clicked'?</label>
+            <select name="quiz2">
+              <option id="knop1" value="">Kies een antwoord</option>
+              <option id="knop2" value="antwoord1">'glide in ... sec to ...' blokjes</option>
+              <option id="knop3" value="antwoord2">Code die je vaker moet activeren met een knop</option>
+              <option id="knop4" value="antwoord3">Code met repeat blokjes erin</option>
+            </select>
+          </div>
+        </form>
 
-      <form id="quiz3" class="radioButtonQuiz">
-        <div id="quizRadio" class="vraag">
-          <label for="quiz3">Wat is het verschil tussen het repeat blokje en het forever blokje?</label>
-          <input type="radio" id="knop1" name="quiz3" value="knop1">
-          <label id="goedAntwoord" for="knop1">De naam</label><br>
-          <input type="radio" id="knop2" name="quiz3" value="knop2">
-          <label for="knop2">Repeat herhaald maar een gegeven keer, forever herhaalt voor altijd</label><br>
-          <input type="radio" id="knop3" name="quiz3" value="knop3">
-          <label for="knop3">Repeat kan meer blokjes bevatten</label><br>
-        </div>
-      </form>
+        <button type="button" id="submitButton2" class="submitButton" onclick="controleerAntwoorden('submitButton2', 'quiz2')" style="display: block;">Nakijken</button>
 
-      <button type="button" id="submitButton3" class="submitButton" onclick="controleerAntwoorden('submitButton3', 'quiz3')" style="display: block;">Nakijken</button>
+        <form id="quiz3" class="radioButtonQuiz">
+          <div id="quizRadio" class="vraag">
+            <label for="quiz3">Wat is het verschil tussen het repeat blokje en het forever blokje?</label>
+            <input type="radio" id="knop1" name="quiz3" value="knop1">
+            <label id="goedAntwoord" for="knop1">De naam</label><br>
+            <input type="radio" id="knop2" name="quiz3" value="knop2">
+            <label for="knop2">Repeat herhaald maar een gegeven keer, forever herhaalt voor altijd</label><br>
+            <input type="radio" id="knop3" name="quiz3" value="knop3">
+            <label for="knop3">Repeat kan meer blokjes bevatten</label><br>
+          </div>
+        </form>
 
-      <script src="script.js"></script>
+        <button type="button" id="submitButton3" class="submitButton" onclick="controleerAntwoorden('submitButton3', 'quiz3')" style="display: block;">Nakijken</button>
+
+        <script src="script.js"></script>
+      </div>
     </div>
-  </div>
 
-  <!-- Onze eerste tutorial pagina: The basics
-    Hier vind je:
-    - Hoe je de blokjes onder 'Motion' gebruikt
-    - Hoe je de blokjes onder 'Events' gebruikt
-    - Hoe je de blokjes onder 'Control' gebruikt -->
+    <!-- Onze eerste tutorial pagina: The basics
+      Hier vind je:
+      - Hoe je de blokjes onder 'Motion' gebruikt
+      - Hoe je de blokjes onder 'Events' gebruikt
+      - Hoe je de blokjes onder 'Control' gebruikt -->
 
     <div id="page2" class="page">
       <div id="page2_text1">
@@ -346,94 +346,94 @@
       
     </div>
 
-    <!-- Onze tweede tutorial pagina: Variabelen
-      Hier vind je:
-      - Hoe je je eigen variablen maakt en kunt gebruiken -->
+      <!-- Onze tweede tutorial pagina: Variabelen
+        Hier vind je:
+        - Hoe je je eigen variablen maakt en kunt gebruiken -->
 
-      <div id="page3" class="page">
-        <div id="page3_text1">
-          <h1>Looks</h1>
-          <p>Hier ga je leren hoe je de looks van je sprites kan veranderen. Je kan bijvoorbeeld de sprite een andere kleur geven, een andere vorm of
-            een andere grootte geven en je sprite iets laten zeggen. 
-          </p>
-        </div>
-  
-        <div class="card" id="page3_card1">
-          <img id="page3_img1" src="plaatjes/looks.png" alt="variabelen" title="Het variables kopje in Scratch">
-          <div class="tekst">
-            <p>Het looks menu in Scratch</p>
-          </div>    
-        </div>
-        
-        <div class="card" id="page3_card2">
-          <img id="page3_img2" src="plaatjes/spriteZegtHalloWereld.png" alt="Sprite die 'hallo wereld!' zegt" title="Sprite die 'hallo wereld!' zegt">
-          <div class="tekst">
-            <p>Sprite die "hallo wereld!" zegt</p>
-          </div>    
-        </div>
-  
-        <div id="page3_text2">
-          <h3>Een sprite iets laten zeggen</h3>
-          <p>Je kan een sprite iets laten zeggen door een blokje "say ... for ... seconds" te gebruiken. Dit blokje zorgt ervoor dat de sprite iets zegt
-            voor een bepaalde tijd. Je kan ook een sprite iets laten zeggen voor altijd door een blokje "say ..." te gebruiken. Dit blokje zorgt ervoor
-            dat de sprite iets zegt totdat je een ander blokje gebruikt om de sprite iets anders te laten zeggen. Je kan ook een sprite iets laten denken
-            door een blokje "think ... for ... seconds" te gebruiken. Dit blokje werkt hetzelfde als het blokje "say ... for ... seconds" alleen ziet het
-            er uit alsof de sprite het denkt in plaats van praat.
-          </p>
-        </div>
-  
-        <div id="page3_text3">
-          <h3>Kostuum van sprite veranderen</h3>
-          <p>Je kan het kostuum van een sprite veranderen door een blokje "switch costume to ..." te gebruiken. Dit blokje zorgt ervoor dat de sprite
-            een ander kostuum krijgt. Je kan ook een sprite een ander kostuum geven door een blokje "next costume" te gebruiken. Dit blokje zorgt ervoor
-            dat de sprite het volgende kostuum krijgt. Ook kan je de achtergrond veranderen door een blokje "switch backdrop to ..." te gebruiken, dit blokje
-            werkt hetzelfde als het blokje "switch costume to ..." alleen verander je de achtergrond in plaats van de sprite.
-          </p>
-        </div>
-          
-        <div class="card" id="page3_card3">
-          <video id="page3_video1" controls>
-            <source src="videos/veranderKostuum.mp4" type="video/mp4">
-          </video>    
-        </div>
-        
-        <div class="card" id="page3_card4">
-          <img id="page3_img3" src="plaatjes/spriteMetFisheye.png" alt="Sprite met fisheye effect op stand 250" title="Sprite met fisheye effect op stand 250">
-          <div class="tekst">
-            <p>Sprite met fisheye effect op stand 250</p>
-          </div>    
-        </div>
-
-        <div id="page3_text4">
-          <h3>Grootte en kleur van sprite veranderen</h3>
-          <p>Je kan de grootte van een sprite veranderen door een blokje "set size to ..." te gebruiken. Dit blokje zorgt ervoor dat de sprite een bepaalde
-            grootte krijgt. Je kan ook de grootte van een sprite veranderen door een blokje "change size by ..." te gebruiken. Dit blokje werkt hetzelfde als
-            het blokje "set size to ..." alleen verander je de grootte van de sprite met een getal, dit kan een positief getal zijn om de sprite te vergroten,
-            maar je kan ook een negatief getal gebruiken om de sprite te verkleinen. Je kan de kleur van een sprite veranderen door een blokje "set ... effect
-            to ..." te gebruiken. Dit blokje zorgt ervoor dat de sprite een bepaalde kleur krijgt met een bepaald effect. Je kan ook de kleur van een sprite veranderen door een blokje
-            "change ... effect by ..." te gebruiken. Dit blokje werkt hetzelfde als het blokje "set ... effect to ..." alleen verander je de kleur of het effect van de sprite
-            met een getal, dit kan een positief getal zijn om de kleur of het effect te veranderen, maar je kan ook een negatief getal gebruiken om de kleur of het effect  te veranderen.
-            Het blokje "clear graphic effects" zorgt ervoor dat alle effecten van de sprite worden verwijderd.
-          </p>
-        </div>
-
-        <div id="page3_text5">
-          <h3>Sprite zichtbaar en onzichtbaar maken</h3>
-          <p>Je kan een sprite zichtbaar maken door een blokje "show" te gebruiken. Dit blokje zorgt ervoor dat de sprite zichtbaar wordt.
-            Je kan de sprite ook weer onzichtbaar maken door een blokje "hide" te gebruiken. Dit blokje zorgt ervoor dat de sprite niet meer zichtbaar is.
-            Als je meerdere sprites hebt die op de achtergrond staan kan je een sprite naar voren of achter halen door een blokje "go to front layer" of
-            "go to back layer" te gebruiken. Je kan ook een sprite naar voren of achter halen door het blokje "go forward/backward ... layers" te gebruiken.
-          </p>
-        </div>
-      
-        <script src="script.js"></script>
+    <div id="page3" class="page">
+      <div id="page3_text1">
+        <h1>Looks</h1>
+        <p>Hier ga je leren hoe je de looks van je sprites kan veranderen. Je kan bijvoorbeeld de sprite een andere kleur geven, een andere vorm of
+          een andere grootte geven en je sprite iets laten zeggen. 
+        </p>
       </div>
 
-    <!-- Onze derde tutorial pagina: looks
-      Hier vind je:
-      - Hoe je uiterlijk van sprites kunt veranderen (costumes)
-      - Hoe je geluiden kan toevoegem (sounds)
-      - Hoe je de achtergrond kan veranderen (backdrop) -->
+      <div class="card" id="page3_card1">
+        <img id="page3_img1" src="plaatjes/looks.png" alt="variabelen" title="Het variables kopje in Scratch">
+        <div class="tekst">
+          <p>Het looks menu in Scratch</p>
+        </div>    
+      </div>
+      
+      <div class="card" id="page3_card2">
+        <img id="page3_img2" src="plaatjes/spriteZegtHalloWereld.png" alt="Sprite die 'hallo wereld!' zegt" title="Sprite die 'hallo wereld!' zegt">
+        <div class="tekst">
+          <p>Sprite die "hallo wereld!" zegt</p>
+        </div>    
+      </div>
+
+      <div id="page3_text2">
+        <h3>Een sprite iets laten zeggen</h3>
+        <p>Je kan een sprite iets laten zeggen door een blokje "say ... for ... seconds" te gebruiken. Dit blokje zorgt ervoor dat de sprite iets zegt
+          voor een bepaalde tijd. Je kan ook een sprite iets laten zeggen voor altijd door een blokje "say ..." te gebruiken. Dit blokje zorgt ervoor
+          dat de sprite iets zegt totdat je een ander blokje gebruikt om de sprite iets anders te laten zeggen. Je kan ook een sprite iets laten denken
+          door een blokje "think ... for ... seconds" te gebruiken. Dit blokje werkt hetzelfde als het blokje "say ... for ... seconds" alleen ziet het
+          er uit alsof de sprite het denkt in plaats van praat.
+        </p>
+      </div>
+
+      <div id="page3_text3">
+        <h3>Kostuum van sprite veranderen</h3>
+        <p>Je kan het kostuum van een sprite veranderen door een blokje "switch costume to ..." te gebruiken. Dit blokje zorgt ervoor dat de sprite
+          een ander kostuum krijgt. Je kan ook een sprite een ander kostuum geven door een blokje "next costume" te gebruiken. Dit blokje zorgt ervoor
+          dat de sprite het volgende kostuum krijgt. Ook kan je de achtergrond veranderen door een blokje "switch backdrop to ..." te gebruiken, dit blokje
+          werkt hetzelfde als het blokje "switch costume to ..." alleen verander je de achtergrond in plaats van de sprite.
+        </p>
+      </div>
+        
+      <div class="card" id="page3_card3">
+        <video id="page3_video1" controls>
+          <source src="videos/veranderKostuum.mp4" type="video/mp4">
+        </video>    
+      </div>
+      
+      <div class="card" id="page3_card4">
+        <img id="page3_img3" src="plaatjes/spriteMetFisheye.png" alt="Sprite met fisheye effect op stand 250" title="Sprite met fisheye effect op stand 250">
+        <div class="tekst">
+          <p>Sprite met fisheye effect op stand 250</p>
+        </div>    
+      </div>
+
+      <div id="page3_text4">
+        <h3>Grootte en kleur van sprite veranderen</h3>
+        <p>Je kan de grootte van een sprite veranderen door een blokje "set size to ..." te gebruiken. Dit blokje zorgt ervoor dat de sprite een bepaalde
+          grootte krijgt. Je kan ook de grootte van een sprite veranderen door een blokje "change size by ..." te gebruiken. Dit blokje werkt hetzelfde als
+          het blokje "set size to ..." alleen verander je de grootte van de sprite met een getal, dit kan een positief getal zijn om de sprite te vergroten,
+          maar je kan ook een negatief getal gebruiken om de sprite te verkleinen. Je kan de kleur van een sprite veranderen door een blokje "set ... effect
+          to ..." te gebruiken. Dit blokje zorgt ervoor dat de sprite een bepaalde kleur krijgt met een bepaald effect. Je kan ook de kleur van een sprite veranderen door een blokje
+          "change ... effect by ..." te gebruiken. Dit blokje werkt hetzelfde als het blokje "set ... effect to ..." alleen verander je de kleur of het effect van de sprite
+          met een getal, dit kan een positief getal zijn om de kleur of het effect te veranderen, maar je kan ook een negatief getal gebruiken om de kleur of het effect  te veranderen.
+          Het blokje "clear graphic effects" zorgt ervoor dat alle effecten van de sprite worden verwijderd.
+        </p>
+      </div>
+
+      <div id="page3_text5">
+        <h3>Sprite zichtbaar en onzichtbaar maken</h3>
+        <p>Je kan een sprite zichtbaar maken door een blokje "show" te gebruiken. Dit blokje zorgt ervoor dat de sprite zichtbaar wordt.
+          Je kan de sprite ook weer onzichtbaar maken door een blokje "hide" te gebruiken. Dit blokje zorgt ervoor dat de sprite niet meer zichtbaar is.
+          Als je meerdere sprites hebt die op de achtergrond staan kan je een sprite naar voren of achter halen door een blokje "go to front layer" of
+          "go to back layer" te gebruiken. Je kan ook een sprite naar voren of achter halen door het blokje "go forward/backward ... layers" te gebruiken.
+        </p>
+      </div>
+    
+      <script src="script.js"></script>
+    </div>
+
+      <!-- Onze derde tutorial pagina: looks
+        Hier vind je:
+        - Hoe je uiterlijk van sprites kunt veranderen (costumes)
+        - Hoe je geluiden kan toevoegem (sounds)
+        - Hoe je de achtergrond kan veranderen (backdrop) -->
 
     <div id="overOns" class="page">
       <p>Op deze paginna ga je wat leuks leren over ons, de makers van deze prachtige website.</p>
@@ -483,16 +483,11 @@
       <script src="script.js"></script>
       <script src="quiz.js"></script>
     </div>
-  </div>
 
-  <!-- Onze over ons pagina
-    Hier vind je: -->
-  
+    <!-- Onze over ons pagina
+      Hier vind je: -->
+    
 
-</div>  
-
-<script src="script.js"></script>
-  <!-- Linkt onze javascript document met het html bestand-->
+  </div>  
 </body>
-
 </html>
