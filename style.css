@@ -352,10 +352,9 @@ nav {
   float: left;
   border-radius: 50px;
   padding: 20px;
-  background-image: url(plaatjes/test4.png);
+  background-color: #9D511A;
   border-radius: 25px;
   margin-top: 30px;
-  margin-left: 29%;
 }
 
 .card {
@@ -462,16 +461,15 @@ nav {
 }
 
 #page3 {
-  background-color: #9D511A;
-  height: auto;
   width: 800px;
-  float:left;
+  height: auto;
   font-family: serif;
-  background-image: url(plaatjes/test4.png);
+  float: left;
+  border-radius: 50px;
+  padding: 20px;
+  background-color: #9D511A;
   border-radius: 25px;
   margin-top: 30px;
-  margin-left: 29%;
-  padding: 20px;
 }
 
 #page3_text1 {
@@ -565,17 +563,15 @@ nav {
 }
 
 #overOns {
-  background-color: #9D511A;
-  height: auto;
   width: 800px;
-  float:left;
+  height: auto;
   font-family: serif;
-  background-image: url(plaatjes/test4.png);
+  float: left;
+  border-radius: 50px;
+  padding: 20px;
+  background-color: #9D511A;
   border-radius: 25px;
   margin-top: 30px;
-  margin-left: 29%;
-  padding: 20px;
-
 }
 
 #flikkervideo {
