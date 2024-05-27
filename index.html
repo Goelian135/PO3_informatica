@@ -24,8 +24,6 @@
   </div>
 
   <nav>
-
-    <script src="script.js"></script>
     <button class="button" onclick="togglePage('home')">Home</button> 
     <button class="button" onclick="togglePage('introductie')">Introductie</button>
     <button class="button" onclick="togglePage('page1')">The Basics</button>
@@ -217,51 +215,52 @@
     
     
 
-  <div id="quiz">
-    <form id="quiz1" class="radioButtonQuiz">
-      <div id="quizRadio" class="vraag">
-        <label for="quiz1">Hoe beweeg je je sprite naar links met het blokje 'move ... steps'?</label>
-        <input type="radio" id="knop1" name="quiz1" value="knop1">
-        <label id="goedAntwoord" for="knop1">Met -... steps (move -10 steps)</label><br>
-        <input type="radio" id="knop2" name="quiz1" value="knop2">
-        <label for="knop2">Een 'L' toe te voegen na het cijfer (move 10 L steps)</label><br>
-        <input type="radio" id="knop3" name="quiz1" value="knop3">
-        <label for="knop3">kan niet</label><br>
-      </div>
-    </form>
-    
+    <div id="quiz">
+      <form id="quiz1" class="radioButtonQuiz">
+        <div id="quizRadio" class="vraag">
+          <label for="quiz1">Hoe beweeg je je sprite naar links met het blokje 'move ... steps'?</label>
+          <input type="radio" id="knop1" name="quiz1" value="knop1">
+          <label id="goedAntwoord" for="knop1">Met -... steps (move -10 steps)</label><br>
+          <input type="radio" id="knop2" name="quiz1" value="knop2">
+          <label for="knop2">Een 'L' toe te voegen na het cijfer (move 10 L steps)</label><br>
+          <input type="radio" id="knop3" name="quiz1" value="knop3">
+          <label for="knop3">kan niet</label><br>
+        </div>
+      </form>
+      
 
-    <button type="button" id="submitButton1" class="submitButton" onclick="controleerAntwoorden('submitButton1', 'quiz1')" style="display: block;">Nakijken</button>
+      <button type="button" id="submitButton1" class="submitButton" onclick="controleerAntwoorden('submitButton1', 'quiz1')" style="display: block;">Nakijken</button>
 
-    <form id="quiz2" class="dropDownQuiz">
-      <div id="dropDown" class="vraag">
-        <label for="">Wat voor code moet je niet toevoegen onder het eventblokje 'when vlaggetje clicked'?</label>
-        <select name="quiz2">
-          <option id="knop1" value="">Kies een antwoord</option>
-          <option id="knop2" value="antwoord1">'glide in ... sec to ...' blokjes</option>
-          <option id="knop3" value="antwoord2">Code die je vaker moet activeren met een knop</option>
-          <option id="knop4" value="antwoord3">Code met repeat blokjes erin</option>
-        </select>
-      </div>
-    </form>
+      <form id="quiz2" class="dropDownQuiz">
+        <div id="dropDown" class="vraag">
+          <label for="">Wat voor code moet je niet toevoegen onder het eventblokje 'when vlaggetje clicked'?</label>
+          <select name="quiz2">
+            <option id="knop1" value="">Kies een antwoord</option>
+            <option id="knop2" value="antwoord1">'glide in ... sec to ...' blokjes</option>
+            <option id="knop3" value="antwoord2">Code die je vaker moet activeren met een knop</option>
+            <option id="knop4" value="antwoord3">Code met repeat blokjes erin</option>
+          </select>
+        </div>
+      </form>
 
-    <button type="button" id="submitButton2" class="submitButton" onclick="controleerAntwoorden('submitButton2', 'quiz2')" style="display: block;">Nakijken</button>
+      <button type="button" id="submitButton2" class="submitButton" onclick="controleerAntwoorden('submitButton2', 'quiz2')" style="display: block;">Nakijken</button>
 
-    <form id="quiz3" class="radioButtonQuiz">
-      <div id="quizRadio" class="vraag">
-        <label for="quiz3">Wat is het verschil tussen het repeat blokje en het forever blokje?</label>
-        <input type="radio" id="knop1" name="quiz3" value="knop1">
-        <label id="goedAntwoord" for="knop1">De naam</label><br>
-        <input type="radio" id="knop2" name="quiz3" value="knop2">
-        <label for="knop2">Repeat herhaald maar een gegeven keer, forever herhaalt voor altijd</label><br>
-        <input type="radio" id="knop3" name="quiz3" value="knop3">
-        <label for="knop3">Repeat kan meer blokjes bevatten</label><br>
-      </div>
-    </form>
+      <form id="quiz3" class="radioButtonQuiz">
+        <div id="quizRadio" class="vraag">
+          <label for="quiz3">Wat is het verschil tussen het repeat blokje en het forever blokje?</label>
+          <input type="radio" id="knop1" name="quiz3" value="knop1">
+          <label id="goedAntwoord" for="knop1">De naam</label><br>
+          <input type="radio" id="knop2" name="quiz3" value="knop2">
+          <label for="knop2">Repeat herhaald maar een gegeven keer, forever herhaalt voor altijd</label><br>
+          <input type="radio" id="knop3" name="quiz3" value="knop3">
+          <label for="knop3">Repeat kan meer blokjes bevatten</label><br>
+        </div>
+      </form>
 
-    <button type="button" id="submitButton3" class="submitButton" onclick="controleerAntwoorden('submitButton3', 'quiz3')" style="display: block;">Nakijken</button>
+      <button type="button" id="submitButton3" class="submitButton" onclick="controleerAntwoorden('submitButton3', 'quiz3')" style="display: block;">Nakijken</button>
 
-    <script src="script.js"></script>
+      <script src="script.js"></script>
+    </div>
   </div>
 
   <!-- Onze eerste tutorial pagina: The basics
